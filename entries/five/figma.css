@@ -1,0 +1,262 @@
+/* text settings */
+
+@font-face {
+    font-family: "GaisyerItalic"; /* This is an arbitrary name -- */
+    src: url("fonts/ABCGaisyr-RegularItalic-Trial.woff2") format("woff2");
+     }
+    
+  @font-face {
+  font-family: "GaisyerMono"; /* This is an arbitrary name -- */
+  src: url("fonts/ABCGaisyrMono-Book-Trial.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: "ABCGalapagosABGrid"; /* This is an arbitrary name -- */
+    src: url("fonts/ABCGalapagosABGrid-Black-Trial.woff2") format("woff2");
+    }
+
+
+.desktop {
+  background-color: #ffffff;
+  min-height: 1779px;
+  min-width: 1440px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.desktop .rectangle {
+  background-color: #fcbcea;
+  height: 3384px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.desktop .pink {
+  aspect-ratio: 1.78;
+  height: 414px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 735px;
+}
+
+.desktop .img {
+  aspect-ratio: 1.78;
+  height: 414px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 828px;
+  width: 736px;
+}
+
+.desktop .pink-2 {
+  aspect-ratio: 1.78;
+  height: 123px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 1656px;
+  width: 736px;
+}
+
+.desktop .pink-3 {
+  aspect-ratio: 1.78;
+  height: 414px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 414px;
+  width: 735px;
+}
+
+.desktop .pink-4 {
+  aspect-ratio: 1.78;
+  height: 414px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 1242px;
+  width: 736px;
+}
+
+.desktop .pink-5 {
+  aspect-ratio: 1.78;
+  height: 414px;
+  left: 735px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 705px;
+}
+
+.desktop .pink-6 {
+  aspect-ratio: 1.78;
+  height: 414px;
+  left: 736px;
+  object-fit: cover;
+  position: absolute;
+  top: 828px;
+  width: 704px;
+}
+
+.desktop .pink-7 {
+  aspect-ratio: 1.78;
+  height: 123px;
+  left: 736px;
+  object-fit: cover;
+  position: absolute;
+  top: 1656px;
+  width: 704px;
+}
+
+.desktop .pink-8 {
+  aspect-ratio: 1.78;
+  height: 414px;
+  left: 735px;
+  object-fit: cover;
+  position: absolute;
+  top: 414px;
+  width: 705px;
+}
+
+.desktop .pink-9 {
+  aspect-ratio: 1.78;
+  height: 414px;
+  left: 736px;
+  object-fit: cover;
+  position: absolute;
+  top: 1242px;
+  width: 704px;
+}
+
+.desktop .div {
+  background-color: #ffffffe6;
+  border-radius: 30px;
+  height: 1056px;
+  left: 202px;
+  position: absolute;
+  top: 414px;
+  width: 1050px;
+}
+
+.desktop .rectangle-2 {
+  background-color: #ffffffe6;
+  border-radius: 31px;
+  height: 221px;
+  left: 202px;
+  position: absolute;
+  top: 157px;
+  width: 1050px;
+}
+
+.desktop .text-wrapper {
+  color: #581a8e;
+  font-family: "courier-std", monospace;
+  font-size: 48px;
+  font-weight: 400;
+  left: 280px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 180px;
+  width: 919px;
+}
+
+.desktop .SATURDAY-NIGHT-AND-i {
+  color: #581a8e;
+  font-family: "courier-std", monospace;
+  font-size: 24px;
+  font-weight: 400;
+  left: 296px;
+  letter-spacing: 0.48px;
+  line-height: 33px;
+  position: absolute;
+  top: 501px;
+  width: 877px;
+}
+
+.desktop .GIRL-looks-up-and {
+  color: #581a8e;
+  font-family: "courier-std", monospace;
+  font-size: 24px;
+  font-weight: 400;
+  left: 246px;
+  letter-spacing: 0;
+  line-height: 25px;
+  position: absolute;
+  text-align: center;
+  top: 1062px;
+  width: 948px;
+}
+
+    /* button style*/
+  
+    .desktop .group {
+        position: absolute;
+        top: 1500px;
+        left: 584px;
+        width: 273px;
+        height: 82px;
+      }
+      
+      .desktop .go-back-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 60px;
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 16px;
+        font-family:cursive;
+        cursor: pointer;
+        text-align: center;
+        align-content: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #ff00aa;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px #842b59;
+      }
+      
+      .desktop .text-wrapper-3 {
+        position: absolute;
+        top: 24px;
+        left: 52px;
+        width: 219px;
+        align-content: center;
+        font-family: "courier-std", monospace;
+        font-weight: 400;
+        color: #ffffff;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: 25px;
+      }
+    
+    .desktop .go-back-button:hover {
+      background-color: #842b59;
+      cursor: url("../../imgs/pointer.png"), pointer;
+    }
+    
+    .desktop .go-back-button:active {
+      background-color: #ff00aa;
+      box-shadow: 0 5px #842b59;
+      transform: translateY(4px);
+    }
+    
+  
+  /* cursor settings */
+  html {
+    cursor: url("imgs/cursor.png"), auto;
+  }
+  
+  .clickable-element {
+    cursor: url("imgs/pointer.png"), pointer;
+  }
