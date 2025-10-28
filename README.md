@@ -1,2 +1,2 @@
-# conversations_i_overheard_in_nyc
+# nosymeinnyc
 these are a collection of conversations I overheard in NYC
