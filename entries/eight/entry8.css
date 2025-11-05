@@ -1,0 +1,225 @@
+
+.wrapper > * {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr),auto;
+    grid-auto-rows: repeat(7,1fr), auto;
+    grid-gap: 0.3em;
+    margin:1em; 
+    padding:auto;
+}
+
+h4{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  color: purple;
+  text-align: center;
+}
+
+/* .wrapper > div{
+  background: pink;
+  padding: 1em;
+}
+
+.wrapper > div:nth-child(odd){
+  background: mediumturquoise;
+  padding: 1em;
+} */
+
+body{
+  background-color: #fcbcea;
+  margin: 2em;
+}
+
+
+/*
+.title {
+    border: 10px solid deepskyblue;
+}
+
+.bodytext {
+    border: 10px solid blue;
+    border-image-repeat: round;
+}
+  
+.nav{
+  border: 10px solid lavender;
+}
+
+  
+/* for mobile */
+
+@media all and (max-width: 800px) {
+    .title {
+        grid-area: a;
+        font-family: "Glass Antiqua", cursive;
+        width: 80%;
+        text-align: center;
+        font-size: 1.7em;
+        color: purple;
+      }
+    .setting{
+      grid-area: b;
+        justify-content: space-evenly;
+        font-family: 'Courier New', Courier, monospace;  
+        font-size: 1em;
+        text-align: left;
+        color: purple;
+        align-items: center;
+    }
+
+    .bodytext1 {
+      grid-area: c;
+      justify-content: space-evenly;
+      text-align: left;
+      margin-left:auto;
+      font-family: 'Courier New', Courier, monospace;  
+      font-size: 1em;
+      color: purple;
+      align-items: center;
+    }
+
+    .bodytext2 {
+      grid-area: d;
+      grid-column: 3/7;
+      margin-left:auto;
+      text-align: right;
+      font-family: 'Courier New', Courier, monospace;  
+      font-size: 1em;
+      color: purple;
+      align-content: left;
+    }
+    
+    .nav{
+      z-index: 99;
+      display: flex;
+      order: 3;
+      bottom: 7%;
+      height: 30%;
+      justify-content: center;
+      align-items: center;
+      font-style: bold;
+      font-size: 1em;
+      color: pink;
+    }
+
+      /*border image repeat*/
+    #bordered {
+      width: 80%;
+      margin-bottom: 5%;
+      padding: 4%;
+      border: 10px solid;
+      border-image: url("../../imgs/lace.png") 300;
+      border-image-repeat:repeat; /* Can be changed in the live sample */
+    }
+}
+  
+  
+  
+/* for large screens */
+  
+@media all and (min-width: 801px) {
+    .title {
+        font-family: "Glass Antiqua", cursive;
+        text-align: center;
+        font-size: 3em;
+        padding: 1em;
+        color: purple;
+      }
+    .setting{
+      grid-area:b;
+        font-family: 'Courier New', Courier, monospace;  
+        font-size: 1.2em;
+        padding-left: 7em;
+        color: purple;
+        align-content: center;
+        align-items: center;
+    }
+
+    .bodytext1 {
+      align-self: center;
+      padding-left: 15em;
+      font-family: 'Courier New', Courier, monospace;  
+      font-size: 1em;
+      color: purple;
+      align-content: left;
+      align-items: center;
+    }
+
+    .bodytext2 {
+      padding-right: 15em;
+      align-self: center;
+      align-content: right;
+      font-family: 'Courier New', Courier, monospace;  
+      font-size: 1em;
+      color: purple;
+      text-align: right;
+      align-items: center;
+    }
+
+    .nav{
+      grid-column: 1/7;
+      z-index: 99;
+      display: flex;
+      bottom: 10%;
+      height: 30%;
+      padding-bottom:1em;
+      justify-content: space-evenly;
+      align-items: center;
+      font-style: bold;
+      font-size: 1em;
+      color: pink;
+    }
+  
+
+      /*border image repeat*/
+    #bordered {
+      width: 80%;
+      margin-bottom: 5%;
+      padding: 4%;
+      border: 10px solid;
+      border-image: url("../../imgs/lace.png") 300;
+      border-image-repeat:repeat; /* Can be changed in the live sample */
+    }
+}
+
+
+
+  /* button style*/
+
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-family:cursive;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff00aa;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #842b59;
+  }
+  
+.button1:hover {
+  background-color: #842b59;
+  cursor: url("../../imgs/pointer.png"), pointer;
+}
+
+.button1:active {
+  background-color: #ff00aa;
+  box-shadow: 0 5px #842b59;
+  transform: translateY(4px);
+}
+
+
+/* cursor settings */
+html {
+  cursor: url("../../imgs/cursor.png"), auto; 
+}
+
+.clickable-element {
+  cursor: url("../../imgs/pointer.png"), pointer;
+}
+  
