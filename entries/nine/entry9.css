@@ -1,0 +1,48 @@
+body {
+  color: white;
+  font-family: "Scope One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  color: white;
+  font-family: "Scope One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+section {
+  display: grid;
+  place-items: center;
+  align-content:center;
+  min-height: 100vh;
+  margin: 20px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
+}
+
+@media (prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    } 
+}
