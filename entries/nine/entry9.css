@@ -1,6 +1,6 @@
 body {
   /* margin: 5em; */
-  height: 2000vh;
+  height: 2450vh;
   background: linear-gradient(rgb(35, 31, 60), #786ece);
   font-family: "Antic Didone", serif;
   color:white;
@@ -190,7 +190,7 @@ body {
   opacity: 0;
   filter: blur(10px);
   transform: translateY(20px);
-  transition: all 1s ease-out;
+  transition: all 0.7s ease-out;
 }
 
 .show{
