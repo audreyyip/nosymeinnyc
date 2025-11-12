@@ -3,7 +3,7 @@ body {
   height: 2000vh;
   background: linear-gradient(rgb(35, 31, 60), #786ece);
   font-family: "Antic Didone", serif;
-  color:aliceblue;
+  color:white;
   font-style: normal;
   text-align: center;
 }
@@ -14,7 +14,7 @@ body {
   /* margin:1em;  */
   padding:auto;
   width: 100%;
-  color:aliceblue;
+  color:white;
   transform: translateY(0);
   transition: transofrm 0.1s ease-out;
 }
