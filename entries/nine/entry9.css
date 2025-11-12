@@ -76,6 +76,24 @@ body {
     border-radius: 15px;
     box-shadow: 0 5px #842b59;
   }
+
+  h1 {
+    font-family: "Antic Didone", serif;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: "Antic Didone", serif;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  h3 {
+    font-family: "Antic Didone", serif;
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 
 /*  mobile responsive layout */
@@ -86,9 +104,9 @@ body {
     place-items: center;
     align-content:center;
     min-height: 100vh;
-    margin: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
+    margin: 1rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
 
   .title {
@@ -104,7 +122,6 @@ body {
 
   .bodytext {
     align-self: center;
-    font-size: 14px;
     align-content: center;
     align-items: center;
   }
@@ -129,6 +146,29 @@ body {
     border: none;
     border-radius: 8px;
     box-shadow: 0 5px #842b59;
+    }
+
+    h1 {
+      font-family: "Antic Didone", serif;
+      font-size: 2rem;
+      text-align: center;
+    }
+    
+    h2 {
+      font-family: "Antic Didone", serif;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    
+    h3 {
+      font-family: "Antic Didone", serif;
+      font-size: 1rem;
+      text-align: center;
+    }
+    p{
+      font-family: "Antic Didone", serif;
+      font-size: 1rem;
+      text-align: center;
     }
 }
 
@@ -166,24 +206,6 @@ body {
 } */
 
 /* text styles */
-
-h1 {
-  font-family: "Antic Didone", serif;
-  font-size: 3rem;
-  text-align: center;
-}
-
-h2 {
-  font-family: "Antic Didone", serif;
-  font-size: 2rem;
-  text-align: center;
-}
-
-h3 {
-  font-family: "Antic Didone", serif;
-  font-size: 24px;
-  text-align: center;
-}
 
 
   /* button style*/
