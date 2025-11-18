@@ -1,0 +1,232 @@
+body {
+  /* margin: 5em; */
+  height: 2450vh;
+  background: linear-gradient(rgb(35, 31, 60), #786ece);
+  font-family: "Antic Didone", serif;
+  color:white;
+  font-style: normal;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 2em;
+  /* margin:1em;  */
+  padding:auto;
+  width: 100%;
+  color:white;
+  transform: translateY(0);
+  transition: transofrm 0.1s ease-out;
+}
+
+/*  desktop responsive layout */
+
+@media all and (min-width: 801px) {
+  section{
+    display: grid;
+    place-items: center;
+    align-content:center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 3em;
+    /* padding-left: 10em;
+    padding-right: 10em; */
+  }
+  .title {
+      font-size: 3em;
+      padding-left: 5em;
+      padding-right: 5em;
+      /* padding: 1em; */
+    }
+  .setting{
+    /* padding-left: 7em; */  
+    padding-left: 5em;
+    padding-right: 5em;
+    font-size: 1.2em;
+      
+  }
+
+  .bodytext {
+    padding-left: 5em;
+    padding-right: 5em;
+    align-content: center;
+    font-size: 1.2em;
+  }
+
+  .nav{
+    z-index: 99;
+    bottom: 20%;
+    padding-bottom: 5em;
+    align-items: stretch;
+    font-style: bold;
+    color: pink;
+  }
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-family:cursive;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff00aa;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #842b59;
+  }
+
+  h1 {
+    font-family: "Antic Didone", serif;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: "Antic Didone", serif;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  h3 {
+    font-family: "Antic Didone", serif;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/*  mobile responsive layout */
+
+@media all and (max-width: 800px) {
+  section{
+    display: grid;
+    place-items: center;
+    align-content:center;
+    min-height: 100vh;
+    margin: 1rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+
+  .title {
+    font-size: 0.7em;
+    text-align: center;
+  }
+  .setting{
+      font-size: 0.2em;
+      /* padding-left: 7em; */
+      align-content: center;
+      align-items: center;
+  }
+
+  .bodytext {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+  }
+    .nav{
+      z-index: 99;
+      padding-bottom: 5em;
+      align-items: stretch;
+      font-style: bold;
+      color: pink;
+    }
+  .button {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-family:cursive;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff00aa;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px #842b59;
+    }
+
+    h1 {
+      font-family: "Antic Didone", serif;
+      font-size: 2rem;
+      text-align: center;
+    }
+    
+    h2 {
+      font-family: "Antic Didone", serif;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    
+    h3 {
+      font-family: "Antic Didone", serif;
+      font-size: 1rem;
+      text-align: center;
+    }
+    p{
+      font-family: "Antic Didone", serif;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+}
+
+/* .section1 {
+  display: grid;
+  place-items: center;
+  align-content:center;
+  min-height: 100vh;
+  margin: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+} */
+
+
+
+/* text animation settings */
+
+.hidden{
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(20px);
+  transition: all 0.7s ease-out;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0px);
+}
+
+/* @media (prefers-reduced-motion){
+  .hidden{
+      transition: none;
+  } 
+} */
+
+/* text styles */
+
+
+  /* button style*/
+  
+.button1:hover {
+  background-color: #842b59;
+  cursor: url("../../imgs/pointer.png"), pointer;
+}
+
+.button1:active {
+  background-color: #ff00aa;
+  box-shadow: 0 5px #842b59;
+  transform: translateY(4px);
+}
+
+
+/* cursor settings */
+html {
+  cursor: url("../../imgs/cursor.png"), auto; 
+}
+
+.clickable-element {
+  cursor: url("../../imgs/pointer.png"), pointer;
+}
