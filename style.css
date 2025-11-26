@@ -9,6 +9,18 @@ body {
   line-height: 1.6;
 }
 
+.nav {
+  z-index: 99;
+  top: 40%;
+  padding-left: 2em;
+  display: flex;
+  flex-direction: column; /* This makes them horizontal */
+  justify-content: flex-start; /* Even spacing */
+  align-items: center;
+  flex-wrap: wrap; /* Allows wrapping if needed */
+  gap: 10px; /* Space between buttons */
+  }
+
 /* main page title text */
 h2{
   text-align: center;
