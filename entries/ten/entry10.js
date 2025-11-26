@@ -2,6 +2,19 @@ window.addEventListener('scroll', () => {
     document.querySelector("wrapper").style.transform = `translateY(${window.scrollY * 0.5}px)`;
 });
 
+// let body = document.body;
+
+// function darkMode() {
+//     console.log("Dark mode!");
+//   }
+  
+//   let button = document.querySelector(".button");
+//   button.addEventListener("click", lightMode);
+
+// function lightMode() {
+//   body.classList.toggle("Light mode!");
+//   button.classList.toggle("lightModeButton");
+// }
 
 const observer = new IntersectionObserver((entries)=> {
     entries.forEach((entry) => {

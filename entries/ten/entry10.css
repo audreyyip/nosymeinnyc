@@ -56,8 +56,8 @@ section:hover{
 
   .nav{
     z-index: 99;
-    bottom: 20%;
-    padding-bottom: 5em;
+    top: 20%;
+    padding-top: 5em;
     align-items: stretch;
     align-content: center;
     font-style: bold;
@@ -130,7 +130,8 @@ section:hover{
   }
     .nav{
       z-index: 99;
-      padding-bottom: 5em;
+      top: 20%;
+      padding-top: 5em;
       align-items: stretch;
       font-style: bold;
       color: pink;
