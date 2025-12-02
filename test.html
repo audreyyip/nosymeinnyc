@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Expanding Panels</title>
+    <style>
+        /* The main wrapper is a flex container */
+        .wrapper {
+            display: flex;
+            height: 500px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        /* Sidebar panel */
+        .sidebar {
+            flex: 0 0 100px; /* Fixed starting width */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            position: relative;
+        }
+        
+        /* Content panel */
+        .content-panel {
+            flex: 1; /* Takes remaining space */
+            background: #f8f9fa;
+            padding: 30px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+        }
+        
+        /* Navigation items */
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            white-space: nowrap;
+        }
+        
+        .nav-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .nav-icon {
+            font-size: 24px;
+            min-width: 30px;
+            text-align: center;
+        }
+        
+        .nav-text {
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all 0.3s ease;
+        }
+        
+        /* Content styling */
+        .content-preview {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            max-height: 60px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+        
+        /* HOVER EFFECTS */
+        
+        /* When hovering over SIDEBAR: sidebar expands, content shrinks */
+        .sidebar:hover {
+            flex: 0 0 300px; /* Sidebar expands to 300px */
+        }
+        
+        .sidebar:hover ~ .content-panel {
+            flex: 0.3; /* Content shrinks to 30% of remaining space */
+        }
+        
+        .sidebar:hover .nav-text {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        /* When hovering over CONTENT: content expands, sidebar shrinks */
+        .content-panel:hover {
+            flex: 2; /* Content expands (takes more space) */
+        }
+        
+        .content-panel:hover ~ .sidebar,
+        .content-panel:hover + .sidebar {
+            flex: 0 0 60px; /* Sidebar shrinks to 60px */
+        }
+        
+        .content-panel:hover .content-preview {
+            max-height: 200px;
+        }
+        
+        /* Active state indicators */
+        .nav-item.active {
+            background: rgba(255, 255, 255, 0.25);
+        }
+        
+        /* Add subtle borders for definition */
+        .sidebar::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2px;
+            height: 80%;
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Panel -->
+        <div class="sidebar">
+            <div class="nav-item active">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">Dashboard</span>
+            </div>
+            <div class="nav-item">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Analytics</span>
+            </div>
+            <div class="nav-item">
+                <span class="nav-icon">📁</span>
+                <span class="nav-text">Projects</span>
+            </div>
+            <div class="nav-item">
+                <span class="nav-icon">👥</span>
+                <span class="nav-text">Team</span>
+            </div>
+            <div class="nav-item">
+                <span class="nav-icon">⚙️</span>
+                <span class="nav-text">Settings</span>
+            </div>
+        </div>
+        
+        <!-- Content Panel -->
+        <div class="content-panel">
+            <h2>Content Area</h2>
+            <div class="content-preview">
+                <p><strong>Hover over the sidebar</strong> to expand it and see navigation labels. The content area will shrink to make room.</p>
+                <p><strong>Hover over this content area</strong> to expand it for better reading. The sidebar will shrink.</p>
+                <p>This creates a dynamic interface where you can focus on either navigation or content as needed.</p>
+                <p>The transition uses cubic-bezier timing for a smooth, natural feel. Try moving your cursor between the two panels to see the effect.</p>
+                <p>Each panel expands independently, giving you control over your workspace layout.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,113 +1,148 @@
 
-/* main body text */
+
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+
+@media all and (max-width: 800px) {
+  h2{
+    text-align: center;
+    color: purple;
+    font-size: 24px;
+    font-family: "Glass Antiqua", cursivex;
+  }
+
+  .nav {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    max-width: 600px;
+    gap: 12px;
+  }
+  
+  .button {
+    padding: 18px 22px;
+    font-size: 17px;
+  }
+
+}
+
+
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
+
+@media all and (min-width: 801px) {
+  h2{
+    text-align: center;
+    color: purple;
+    font-size: 40px;
+    font-family: "Glass Antiqua", cursivex;
+  }
+  .nav {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    max-width: 900px;
+    gap: 15px;
+  }
+  
+  .button {
+    padding: 20px 25px;
+    font-size: 18px;
+  }
+  }
+
+
 body {
   background-color: #fcbcea;
   padding: 50px;
   text-align: left;
-  font-size: 16px;
   font-family: Georgia, cursive;
   line-height: 1.6;
 }
 
+/* Navigation using CSS Grid for 2-3 buttons per row */
 .nav {
   z-index: 99;
   top: 40%;
-  padding-left: 2em;
-  display: flex;
-  flex-direction: column; /* This makes them horizontal */
-  justify-content: flex-start; /* Even spacing */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Auto-adjust columns */
+  gap: 15px; /* Spacing between buttons */
+  width: 100%;
+  max-width: 800px; /* Limit total width */
+  margin: 0 auto; /* Center the grid */
+}
+
+/* BUTTON STYLES */
+.button {
+  display: inline-flex;
   align-items: center;
-  flex-wrap: wrap; /* Allows wrapping if needed */
-  gap: 10px; /* Space between buttons */
-  }
-
-/* main page title text */
-h2{
-  text-align: center;
-  color: #581a8e;
-  font-size: 40px;
-  font-family: "Glass Antiqua", cursivex;
-}
-
-/* entries title text */
-h1{
-    text-align: left;
-    color: #581a8e;
-    font-size: 40px;
-    font-family: "Glass Antiqua", cursivex;
-}
-
-/* entries subheaders */
-h3{
+  padding: 15px 20px;
+  font-size: 18px;
+  font-family: Antic Didone, serif;
+  cursor: pointer;
   text-align: left;
-  color: #581a8e;
-  font-weight:normal;
-  font-size: 18px;
-  font-style:italic;
-  font-family: Georgia, serif;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff00aa;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px purple;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  width: 100%; /* Take full width of grid cell */
+  min-width: 60px;
+  max-width: 100%; /* Limit to cell width */
+  white-space: nowrap;
+  box-sizing: border-box; /* Include padding in width */
 }
 
-/* main page body text */
-h4{
-  text-align: center;
-  color: #581a8e;
-  font-weight:normal;
-  font-size: 18px;
-  font-family: Georgia, cursive;
-  line-height: 1.6;
+.button-number {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0;
+  transition: margin-right 0.3s ease;
+  min-width: 20px; /* Ensure consistent number width */
 }
 
-.glass-antiqua-regular {
-  font-family: "Glass Antiqua", cursive;
-  font-weight: 400;
-  font-style: normal;
+.button-text {
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+  transition: all 0.3s ease;
+  margin-left: 0;
+  overflow: hidden;
+  flex-shrink: 0; /* Prevent text from shrinking */
 }
 
-  /* shapes i experimented with*/
-
-.box {
-    width: 200px;
-    height: 100px;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 150px;
-  }
-
-  .oval {
-    width: 1200px;
-    height: 400px;
-    background: white;
-    border-radius: 50%;
-  }
-
-  /* button style*/
-
-  .button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 16px;
-    font-family:cursive;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #ff00aa;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px #842b59;
-  }
+/* HOVER EFFECT - Button expands within its grid cell */
 .button1:hover {
-  background-color: #842b59;
+  background-color: purple;
   cursor: url("imgs/pointer.png"), pointer;
+  max-width: 100%; /* Stay within grid cell */
+  width: 100%; /* Fill the grid cell */
+  z-index: 10; /* Bring to front when expanding */
+  position: relative; /* For z-index to work */
+}
+
+.button1:hover .button-text {
+  opacity: 1;
+  width: auto;
+  margin-left: 10px;
+}
+
+.button1:hover .button-number {
+  margin-right: 5px;
 }
 
 .button1:active {
   background-color: #ff00aa;
-  box-shadow: 0 5px #842b59;
+  box-shadow: 0 3px purple;
   transform: translateY(4px);
 }
 
+.button1:hover {
+  background-color: purple;
+  cursor: url("imgs/pointer.png"), pointer;
+}
 
 /* cursor settings */
 html {
