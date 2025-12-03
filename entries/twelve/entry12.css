@@ -40,7 +40,8 @@ body.light {
 
 .title {
   font-family: Antic Didone, serif;
-  text-align: center;
+  padding: 2em;
+  text-align: left;
   color: purple;
 }
 
@@ -71,6 +72,13 @@ h2:first-of-type {
   color: purple;
 }
 
+#bordered {
+  border: 10px solid;
+  border-image: url("../../imgs/lace.png") 300;
+  border-image-repeat: repeat;
+  padding: 3%;
+  box-sizing: border-box; /* Important for width calculations */
+}
 
 /* MOBILE MOBILE MOBILE MOBILE MOBILE */
 /* MOBILE MOBILE MOBILE MOBILE MOBILE */
@@ -84,7 +92,7 @@ h2:first-of-type {
     }
     .title {
         /* width: 80%; */
-        text-align: center;
+        text-align: left;
         padding: 2em;
         font-size: 1.7em;
         color: purple;
@@ -172,14 +180,15 @@ h2:first-of-type {
       right: 10px;
     }
 
+    #bordered {
+      width: 90%; /* Use percentage instead of fixed */
+      margin: 2em auto; /* Center horizontally */
+      display: block; /* Ensure it's a block element */
+    }
+
   }
       /*border image repeat*/
-    #bordered {
-      padding: 3%;
-      border: 10px solid;
-      border-image: url("../../imgs/lace.png") 300;
-      border-image-repeat:repeat; /* Can be changed in the live sample */
-    }
+      
   
   
 /* DESKTOP DESKTOP DESKTOP */
@@ -190,10 +199,12 @@ h2:first-of-type {
   
 @media all and (min-width: 801px) {
   .title {
+    display: block;
     font-family: Antic Didone, serif;
-    text-align: center;
+    text-align: left;
     font-size: 2em;
-    padding: 2em;
+    margin: 1em;
+    padding-left: 4em;
     color: purple;
   }
   h2 {
@@ -261,15 +272,12 @@ h2:first-of-type {
 
       /*border image repeat*/
     #bordered {
-      display:flex;
-      justify-content:center;
-      align-self:center;
-      width: 70%;
-      padding: 6em;
-      border: 10px solid;
-      border-image: url("../../imgs/lace.png") 300;
-      border-image-repeat:repeat; /* Can be changed in the live sample */
-    }
+    width: 80%; /* Or adjust as needed */
+    margin: 2em auto; /* THIS is key - centers the element */
+    display: block; /* Override flex display if needed */
+    justify-content: center; /* Remove if using margin: auto */
+    align-self: center; /* Keep this */
+  }
     .colorMode:hover {
       background-color: purple;
       cursor: url("../../imgs/pointer.png"), pointer;
@@ -309,7 +317,7 @@ h2:first-of-type {
   .button {
     display: flex;
     align-items: center;
-    padding: 15px 20px;
+    padding: 12px 15px;
     font-size: 18px;
     font-family: Antic Didone, serif;
     cursor: pointer;
