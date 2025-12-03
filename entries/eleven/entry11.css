@@ -266,11 +266,12 @@ color: purple;
       margin-left: 0; /* No margin initially */
       overflow: hidden;
     }
-    .colorMode:hover .mode-text {
+    .mode-text:hover{
       opacity: 1; /* Make text visible */
       width: auto; /* Allow text to take space */
       margin-left: 10px; /* Add space between number and text */
     }
+
   
 }
 
