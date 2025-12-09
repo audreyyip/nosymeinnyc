@@ -595,14 +595,24 @@ h2:first-of-type {
 .light h2,
 .light .dialogue-line,
 .light .character,
-.light .action,
 .light .title-number,
-.light .meta-section{
-  background-color: purple;
-  color: white; 
+.light .meta-section,
+.light .chinese-character,
+.light .chinese-dialogue,
+.light .chinese-setting,
+.light .chinese-title{
+  background-color:purple;
+  color: white;
 }
 
-.light .dialogue-line {
+.light .chinese-action,
+.light .action{
+  background-color: purple;
+  color: #fcbcea; 
+}
+
+.light .dialogue-line, 
+.light .chinese-dialogue {
   border-left: 2px solid white;
 }
 
