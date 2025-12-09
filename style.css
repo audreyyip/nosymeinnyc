@@ -130,6 +130,15 @@ body {
     padding: 20px 22px;
     font-size: 17px;
     opacity: 1;
+    box-shadow: 0 5px purple;
+  }
+
+  #bordered {
+    padding: 0;
+    margin: 0;
+    border: 30px solid;
+    border-image: url("imgs/biscuit.png")30% repeat;
+    box-sizing: border-box;
   }
 
 }

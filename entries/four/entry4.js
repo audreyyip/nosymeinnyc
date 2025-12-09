@@ -16,4 +16,4 @@ function turnOnLight() {
   }
 }
 
-button.addEventListener("click", turnOnLight);
+button.addEventListener("click", turnOnLight);x

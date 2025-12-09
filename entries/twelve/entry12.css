@@ -218,17 +218,16 @@
         font-size: 14px;
       }
   
-      .colorMode { 
-        padding: 5px 10px; 
-        font-size: 12px; 
-      }
-  
       #bordered {
         border: 40px solid;
         border-image: url("../../imgs/biscuit.png")30% repeat;
         box-sizing: border-box;
       }
   
+      .colorMode { 
+        padding: 5px 10px; 
+        font-size: 12px; 
+      }
       .currentPage{
         padding: 10px 10px;
         font-size: 14px;
