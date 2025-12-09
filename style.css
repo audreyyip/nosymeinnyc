@@ -1,54 +1,35 @@
 
 
-/* MOBILE */
-/* MOBILE */
-/* MOBILE */
-
-@media all and (max-width: 800px) {
-  h2{
-    text-align: center;
-    color: purple;
-    font-size: 24px;
-    font-family: "Glass Antiqua", cursivex;
-  }
-
-  .nav {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    max-width: 600px;
-    gap: 12px;
-  }
-  
-  .button {
-    padding: 18px 22px;
-    font-size: 17px;
-  }
-
+h2{
+  padding:0;
+  margin: 0;
 }
 
+h3{
+  font-family: Pinyon Script, cursive;
+  padding:0;
+  margin: 0;
+}
 
-/* DESKTOP */
-/* DESKTOP */
-/* DESKTOP */
-
-@media all and (min-width: 801px) {
-  h2{
-    text-align: center;
-    color: purple;
-    font-size: 40px;
-    font-family: "Glass Antiqua", cursivex;
-  }
-  .nav {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    max-width: 900px;
-    gap: 15px;
-  }
-  
-  .button {
-    padding: 20px 25px;
-    font-size: 18px;
-  }
+.button-number{
+  display: flex;
+  font-family: Pinyon Script, cursive;
+  text-align: left;
+  font-size: 2em;
+  transition: margin-right 0.3s ease;
+  flex-shrink: 0; 
   }
 
+.button-text {
+  text-align: left;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  transition: all 0.3s ease;
+  flex: 1; 
+  min-width: 0;
+  }
 
 body {
   background-color: #fcbcea;
@@ -58,16 +39,23 @@ body {
   line-height: 1.6;
 }
 
-/* Navigation using CSS Grid for 2-3 buttons per row */
+
 .nav {
   z-index: 99;
   top: 40%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Auto-adjust columns */
-  gap: 15px; /* Spacing between buttons */
+  gap: 15px;
   width: 100%;
-  max-width: 800px; /* Limit total width */
-  margin: 0 auto; /* Center the grid */
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+
+.button1:active {
+  background-color: #ff00aa;
+  box-shadow: 0 5px purple;
+  transform: translateY(4px);
 }
 
 /* BUTTON STYLES */
@@ -85,102 +73,176 @@ body {
   background-color: #ff00aa;
   border-radius: 15px;
   transition: all 0.3s ease;
-  overflow: hidden;
-  width: 100%; /* Take full width of grid cell */
-  min-width: 60px;
-  max-width: 100%; /* Limit to cell width */
-  white-space: nowrap;
-  box-sizing: border-box; /* Include padding in width */
+  overflow: visible;
+  width: 100%; 
+  /* min-width: 60px;
+  max-width: 100%;  */
+  white-space: normal;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
-.bubble {
-  position: relative;
-  background: #ff00aa;
-  color: #FFFFFF;
-  font-family: Arial;
-  font-size: 20px;
-  line-height: 120px;
-  text-align: center;
-  border-radius: 50px;
-  width: 250px;
-  height: 120px;
-  box-shadow: 0 5px purple;
-  padding: 0px;
+
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+
+@media all and (max-width: 800px) {
+  h2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: purple;
+    font-size: 2.5em;
+    font-family: "Glass Antiqua", cursivex;
+  }
+
+  h3{
+    text-align: center;
+    color: purple;
+    font-size: 1.7em;
+  }
+
+  .nav {
+    grid-template-columns: repeat(1, 1fr); /* 2 columns */
+    max-width: 600px;
+    gap: 12px;
+  }
+
+  .nav .button-text{
+    padding-left: 7%;
+    font-size: 16px;
+    min-width: 30px;
+    max-width: max-content;
+  }
+  .nav .button-number{
+    font-weight: bold;
+    padding: 0;
+    margin:0;
+    font-size: 2em;
+    min-width: 30px;
+    max-width: 100px;
+  }
+  
+  .button {
+    padding: 20px 22px;
+    font-size: 17px;
+  }
 
 }
-.bubble:after {
-  z-index: -100;
-  content: '';
-  position: absolute;
-  display: block;
-  width: 0;
-  z-index: 1;
-  border-style: solid;
-  box-shadow: 0 5px purple;
-  border-width: 0 0 27px 50px;
-  border-color: transparent transparent #ff00aa transparent;
-  top: 62%;
-  left: -45px;
-  margin-top: -13.5px;
-}
-.bubble:hover{
-  background: purple;
-  box-shadow: 0 8px purple;
-}
 
-.button-number {
-  display: inline-block;
-  font-weight: bold;
-  margin-right: 0;
-  text-align: center;
-  font-size: 24px;
-  transition: margin-right 0.3s ease;
-  min-width: 20px; /* Ensure consistent number width */
-}
+
+/* DESKTOP */
+/* DESKTOP */
+/* DESKTOP */
+
+@media all and (min-width: 801px) {
+  h2{
+    text-align: center;
+    color: purple;
+    font-size: 4em;
+    font-family: "Glass Antiqua", cursivex;
+  }
+
+  h3{
+    text-align: center;
+    color: purple;
+    padding:0;
+    margin: 0;
+    font-size: 2em;
+  }
+
+  .nav {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    max-width: 900px;
+    gap: 15px;
+    
+  }
+  
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family: Antic Didone, serif;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    background-color: #ff00aa;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: visible;
+    width: 100%; 
+    min-width: 60px;
+    max-width: 100%; 
+    white-space: normal;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    box-shadow: 0 5px purple;
+  }
+
+  .button-number {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 0;
+    text-align: left;
+    font-size: 4em;
+    transition: margin-right 0.3s ease;
+    min-width: 20px; /* Ensure consistent number width */
+  }
+  
+  .button-text {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  /* HOVER SETTINGS */
+  .button1:hover {
+    background-color: purple;
+    cursor: url("imgs/pointer.png"), pointer;
+    max-width: 100%; 
+    width: 100%; 
+    z-index: 10; 
+    position: relative; 
+  }
 
 .button-text {
-  display: inline-block;
-  opacity: 0;
-  text-align: right;
-  width: 0;
-  transition: all 0.3s ease;
-  margin-left: 0;
-  overflow: hidden;
-  flex-shrink: 0; /* Prevent text from shrinking */
+    /* opacity: 1; */
+    display: flex;
+    text-align: left;
+    width:15px;
+    flex-wrap: wrap;
+    text-wrap:normal;
+    margin-left: 30px;
+  }
+
+  .button1:hover {
+    background-color: purple;
+    cursor: url("imgs/pointer.png"), pointer;
+    /* box-shadow: 0 10px purple; */
+    transform: translateY(4px);
+  }
+
+  #bordered {
+    width:80;
+  margin-bottom: 5%;
+  padding: 4%;
+  border: 40px solid;
+  border-image: url("../../imgs/biscuit.png")30% repeat;
+  margin: 4em;
 }
 
-/* HOVER EFFECT - Button expands within its grid cell */
-.button1:hover {
-  background-color: purple;
-  cursor: url("imgs/pointer.png"), pointer;
-  max-width: 100%; /* Stay within grid cell */
-  width: 100%; /* Fill the grid cell */
-  z-index: 10; /* Bring to front when expanding */
-  position: relative; /* For z-index to work */
 }
 
-.button1:hover .button-text {
-  opacity: 1;
-  width: auto;
-  margin-left: 10px;
-  box-shadow: 0 8px purple;
-}
 
-.button1:hover .button-number {
-  margin-right: 5px;
-  text-align: right;
-}
 
-.button1:active {
-  background-color: #ff00aa;
-  box-shadow: 0 3px purple;
-  transform: translateY(4px);
-}
-
-.button1:hover {
-  background-color: purple;
-  cursor: url("imgs/pointer.png"), pointer;
-}
 
 /* cursor settings */
 html {

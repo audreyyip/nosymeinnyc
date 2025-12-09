@@ -19,7 +19,7 @@ body {
   transition: transofrm 0.1s ease-out;
 }
 
-/*  desktop responsive layout */
+/* DESKTOP */
 
 @media all and (min-width: 801px) {
   section{
@@ -61,6 +61,7 @@ body {
     font-style: bold;
     color: pink;
   }
+
   .button {
     display: inline-block;
     padding: 15px 25px;
@@ -94,9 +95,10 @@ body {
     font-size: 1.5rem;
     text-align: center;
   }
+  
 }
 
-/*  mobile responsive layout */
+/*  MOBILEEE */
 
 @media all and (max-width: 800px) {
   section{
@@ -110,29 +112,30 @@ body {
   }
 
   .title {
-    font-size: 0.7em;
+    font-size: 16px;
     text-align: center;
   }
   .setting{
-      font-size: 0.2em;
+      font-size: 14px;
       /* padding-left: 7em; */
       align-content: center;
       align-items: center;
   }
 
   .bodytext {
+    font-size: 14px;
     align-self: center;
     align-content: center;
     align-items: center;
   }
-    .nav{
+    /* .nav{
       z-index: 99;
       padding-bottom: 5em;
       align-items: stretch;
       font-style: bold;
       color: pink;
-    }
-  .button {
+    } */
+  /* .button {
     display: inline-block;
     padding: 8px 15px;
     font-size: 14px;
@@ -146,7 +149,7 @@ body {
     border: none;
     border-radius: 8px;
     box-shadow: 0 5px #842b59;
-    }
+    } */
 }
 
 /* .section1 {
@@ -187,7 +190,7 @@ body {
 
   /* button style*/
   
-.button1:hover {
+/* .button1:hover {
   background-color: #842b59;
   cursor: url("../../imgs/pointer.png"), pointer;
 }
@@ -196,7 +199,7 @@ body {
   background-color: #ff00aa;
   box-shadow: 0 5px #842b59;
   transform: translateY(4px);
-}
+} */
 
 
 /* cursor settings */
