@@ -47,6 +47,39 @@
     padding: 20px 25px;
     font-size: 18px;
   }
+/* HOVER EFFECT - Button expands within its grid cell */
+.button1:hover {
+  background-color: purple;
+  cursor: url("imgs/pointer.png"), pointer;
+  max-width: 100%; /* Stay within grid cell */
+  width: 100%; /* Fill the grid cell */
+  z-index: 10; /* Bring to front when expanding */
+  position: relative; /* For z-index to work */
+}
+
+.button1:hover .button-text {
+  opacity: 1;
+  width: auto;
+  margin-left: 10px;
+  box-shadow: 0 8px purple;
+}
+
+.button1:hover .button-number {
+  margin-right: 5px;
+  text-align: right;
+}
+
+.button1:active {
+  background-color: #ff00aa;
+  box-shadow: 0 3px purple;
+  transform: translateY(4px);
+}
+
+.button1:hover {
+  background-color: purple;
+  cursor: url("imgs/pointer.png"), pointer;
+}
+
   }
 
 
@@ -58,13 +91,12 @@ body {
   line-height: 1.6;
 }
 
-/* Navigation using CSS Grid for 2-3 buttons per row */
 .nav {
   z-index: 99;
   top: 40%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Auto-adjust columns */
-  gap: 15px; /* Spacing between buttons */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+  gap: 15px; 
   width: 100%;
   max-width: 800px; /* Limit total width */
   margin: 0 auto; /* Center the grid */
@@ -149,38 +181,7 @@ body {
   flex-shrink: 0; /* Prevent text from shrinking */
 }
 
-/* HOVER EFFECT - Button expands within its grid cell */
-.button1:hover {
-  background-color: purple;
-  cursor: url("imgs/pointer.png"), pointer;
-  max-width: 100%; /* Stay within grid cell */
-  width: 100%; /* Fill the grid cell */
-  z-index: 10; /* Bring to front when expanding */
-  position: relative; /* For z-index to work */
-}
 
-.button1:hover .button-text {
-  opacity: 1;
-  width: auto;
-  margin-left: 10px;
-  box-shadow: 0 8px purple;
-}
-
-.button1:hover .button-number {
-  margin-right: 5px;
-  text-align: right;
-}
-
-.button1:active {
-  background-color: #ff00aa;
-  box-shadow: 0 3px purple;
-  transform: translateY(4px);
-}
-
-.button1:hover {
-  background-color: purple;
-  cursor: url("imgs/pointer.png"), pointer;
-}
 
 /* cursor settings */
 html {
