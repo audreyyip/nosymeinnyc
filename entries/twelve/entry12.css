@@ -198,12 +198,13 @@
         align-items: center;
         gap: 8px;
         padding: 10px;
-        background-color: rgba(252, 188, 234, 0.9);
+        background-color: none;
       }
       
       .nav a {
         width: auto;
       }
+
     
       .nav .button {
         padding: 12px 12px;
@@ -217,7 +218,10 @@
         padding: 12px 16px;
         font-size: 14px;
       }
-  
+
+      .light .nav{
+        background-color: purple;
+      }
       #bordered {
         border: 40px solid;
         border-image: url("../../imgs/biscuit.png")30% repeat;
@@ -370,7 +374,7 @@
         width:fit-content;
         transform-origin: right center;
       }
-  
+
       .light .button1:hover {
         border: 1px solid  #ff00aa;
         cursor: url("../../imgs/pointer.png"), pointer;
