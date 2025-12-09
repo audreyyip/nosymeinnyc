@@ -533,13 +533,17 @@
   
   .light .title,
   .light h2,
-  .light .dialogue-line,
   .light .character,
-  .light .action,
+  .light .dialogue-line,
   .light .title-number,
   .light .meta-section{
     background-color: purple;
     color: white; 
+  }
+
+  .light .action{
+    background-color: purple;
+    color: #fcbcea; 
   }
   
   .light .dialogue-line {
